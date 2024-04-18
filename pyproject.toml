@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "curator-ai"
+version = "0.1.0"
+description = ""
+authors = ["Zachary King <zcking@pm.me>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+curator-ai = "curator_ai.main:main"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.12.3"
+crewai = {extras = ["tools"], version = "^0.28.8"}
+mlflow = "^2.11.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
